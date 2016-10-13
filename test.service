@@ -1,0 +1,8 @@
+[Unit]
+Description=This is the super test
+
+[Service]
+ExecStart=/bin/bash -c "whoami; /tmp/test.sh > /dev/console"
+
+[Install]
+WantedBy=multi-user.target
